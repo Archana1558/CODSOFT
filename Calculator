@@ -1,0 +1,27 @@
+print("Here's a simple calculator which can perform arithmetic operations")
+print("1.Addition")
+print("2.Subtraction")
+print("3.Multiplication")
+print("4.Division")
+print("5.Modulus")
+choice=int(input("Enter the choice according to operation which you want to perform:"))
+if choice in [1,2,3,4,5]:
+    num1=int(input("Enter first number:"))
+    num2=int(input("Enter second number:"))
+    if choice==1:
+        add=num1+num2
+        print("The addition of these two numbers is",add)
+    elif choice==2:
+        sub=num1-num2
+        print("The difference between these to numbers is",sub)
+    elif choice==3:
+        mul=num1*num2
+        print("The multiplication of these two numbers is",mul)
+    elif choice==4:
+        div=num1//num2
+        print("The division of these two numbers is",div)
+    elif choice==5:
+        mod=num1%num2
+        print("The result is",mod)
+else:
+    print("INVALID CHOICE ENTERED.")
